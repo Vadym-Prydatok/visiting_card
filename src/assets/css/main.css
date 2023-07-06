@@ -747,6 +747,108 @@ input, select, textarea {
 		width: 100%;
 	}
 
+  .list_cv::before {
+    display: none;
+    width: 70px;
+    content: 'My CV';
+    position: absolute;
+    top: 52%;
+    animation: active-link 0.3s forwards;
+  }
+
+  .list_cv:hover::before {
+    left: 28%;
+    display: flex;
+  }
+
+  .list_telegram::before {
+    display: none;
+    width: 70px;
+    content: 'Telegram';
+    position: absolute;
+    top: 52%;
+    animation: active-link 0.3s forwards;
+  }
+
+  .list_telegram:hover::before {
+    left: 18%;
+    display: flex;
+  }
+
+  .list_linkedin::before {
+    display: none;
+    width: 70px;
+    content: 'LinkedIn';
+    position: absolute;
+    top: 52%;
+    animation: active-link 0.3s forwards;
+  }
+
+  .list_linkedin:hover::before {
+    left: 20%;
+    display: flex;
+  }
+
+  .list_github::before {
+    display: none;
+    width: 70px;
+    content: 'Github';
+    position: absolute;
+    top: 52%;
+    animation: active-link 0.3s forwards;
+  }
+
+  .list_github:hover::before {
+    left: 26%;
+    display: flex;
+  }
+
+  .list_email::before {
+    display: none;
+    width: 70px;
+    content: 'Email';
+    position: absolute;
+    top: 52%;
+    animation: active-link 0.3s forwards;
+  }
+
+  .list_email:hover::before {
+    left: 30%;
+    display: flex;
+  }
+
+
+  @keyframes active-link {
+    from {
+      transform: scale(0);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .title {
+    background-image: url(./images/stars.jpg);
+    background-size: auto 200%;
+    background-clip: text;
+    margin-bottom: 8px;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 20s linear infinite;
+    padding: 5px 0;
+  }
+
+  @keyframes shine {
+    from {
+      background-position: center 0;
+    }
+    to {
+      background-position: center 200%;
+    }
+  }
+
 	@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
@@ -1002,6 +1104,26 @@ input, select, textarea {
 
 	@media screen and (max-width: 480px) {
 
+    .list_cv:hover::before {
+      display: none;
+    }
+
+    .list_telegram:hover::before {
+      display: none;
+    }
+
+    .list_linkedin:hover::before {
+      display: none;
+    }
+
+    .list_github:hover::before {
+      display: none;
+    }
+
+    .list_email:hover::before {
+      display: none;
+    }
+
 			@-moz-keyframes bg {
 				0% {
 					-moz-transform: translate3d(0,0,0);
@@ -1075,3 +1197,5 @@ input, select, textarea {
 		#header nav {
 			padding: 0 1em;
 		} }
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:900');

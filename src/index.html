@@ -4,12 +4,8 @@
   <head>
     <title>My Visiting Card</title>
     <meta charset="utf-8" />
-    <meta 
-      name="viewport" 
-      content="width=device-width, 
-      initial-scale=1, user-scalable=no" 
-      
-    />
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1, user-scalable=no" />
     <meta property="og:image" content="/assets/css/images/bg4.jpg">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="shortcut icon" type="image/png" href="/assets/css/images/ninja.jpg">
@@ -19,64 +15,44 @@
       <div id="bg" class="bg1"></div>
       <div id="overlay"></div>
       <div id="main">
-  
+
         <header id="header">
-          <h1>Vadym Prydatok <br> </h1>
+          <h1 class="title">Vadym Prydatok</h1>
           <h2>FrontEnd Dev.</h2>
-          <p> Transforming Ideas into Stunning Digital Realities</p>
+          <p>
+            Transforming Ideas into Stunning Digital Realities
+          </p>
           <nav>
             <ul>
-              <li>
-                <a 
-                  href="https://vadym-prydatok-cv.simple.ink" 
-                  class="icon fa-file" 
-                  title="Take a look at my beautiful resume"
-                  target="_blank"
-                >
+              <li class="list_cv">
+                <a href="https://vadym-prydatok-cv.simple.ink" class="icon fa-file"
+                  title="Take a look at my beautiful resume" target="_blank">
                   <span class="label">My CV</span>
                 </a>
               </li>
 
-              <li>
-                <a 
-                  href="https://t.me/vadym_99" 
-                  class="icon brands fa-telegram"
-                  title="Telegram"
-                  target="_blank"
-                >
+              <li class="list_telegram">
+                <a href="https://t.me/vadym_99" class="icon brands fa-telegram" title="Telegram" target="_blank">
                   <span class="label">Telegram</span>
                 </a>
               </li>
 
-              <li>
-                <a 
-                  href="https://www.linkedin.com/in/vadym-prydatok-6540b727a/?locale=en_US" 
-                  class="icon brands fa-linkedin"
-                  target="_blank"
-                  title="LinkedIn"
-                >
+              <li class="list_linkedin">
+                <a href="https://www.linkedin.com/in/vadym-prydatok-6540b727a/?locale=en_US"
+                  class="icon brands fa-linkedin" target="_blank" title="LinkedIn">
                   <span class="label">LinkedIn</span>
                 </a>
               </li>
 
-              <li>
-                <a 
-                  href="https://github.com/Vadym-Prydatok" 
-                  class="icon brands fa-github" 
-                  target="_blank"
-                  title="Github"
-                >
+              <li class="list_github">
+                <a href="https://github.com/Vadym-Prydatok" class="icon brands fa-github" target="_blank"
+                  title="Github">
                   <span class="label">Github</span>
                 </a>
               </li>
 
-              <li>
-                <a 
-                  href="mailto:vadymprydatok@gmail.com" 
-                  class="icon solid fa-envelope"
-                  target="_blank"
-                  title="Email"
-                >
+              <li class="list_email">
+                <a href="mailto:vadymprydatok@gmail.com" class="icon solid fa-envelope" target="_blank" title="Email">
                   <span class="label">Email</span>
                 </a>
               </li>
@@ -86,30 +62,13 @@
 
         <footer id="footer">
           <span class="copyright">
-            <a 
-              href="https://github.com/Vadym-Prydatok" 
-              target="_blank"
-            >
-              &copy; Created by Vadym Prydatok
+            <a id="demo" href="https://github.com/Vadym-Prydatok" target="_blank">
             </a>
           </span>
         </footer>
 
       </div>
     </div>
-    <script>
-      window.onload = function () { document.body.classList.remove('is-preload'); }
-      window.ontouchmove = function () { return false; }
-      window.onorientationchange = function () { document.body.scrollTop = 0; }
-      function getRandomIntInclusive(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
-      let random = getRandomIntInclusive(1, 4)
-      const bgImage = document.querySelector('#bg');
-
-      bgImage.classList.add(`bg${random}`)
-    </script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
